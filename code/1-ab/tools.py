@@ -197,7 +197,7 @@ def display_sift_region(im, compute_grad_mod_ori, compute_sift_region, x=200, y=
 
     mplt.subplot(2,3,6)
     ori_map = orientation_colors()
-    mplt.imshow(ori_map, cmap=cmap, vmin=-1, vmax=b-1)
+    mplt.imshow(ori_map.T, cmap=cmap, vmin=-1, vmax=b-1)
     mplt.colorbar()
     mplt.title("Orientations")
 
