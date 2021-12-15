@@ -1,9 +1,13 @@
 import pickle as pkl
 import tarfile
+import tarfile
 from urllib.request import urlretrieve
+import os
+
 
 import numpy as np
 import skimage
+import skimage.io
 import skimage.transform
 import torchvision
 
