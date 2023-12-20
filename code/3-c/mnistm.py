@@ -56,7 +56,12 @@ def create_mnistm():
     return
 
   if not os.path.exists("BSR_bsds500.tgz"):
-    urlretrieve("http://www.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/BSR/BSR_bsds500.tgz", "BSR_bsds500.tgz")
+    #urlretrieve("http://www.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/BSR/BSR_bsds500.tgz", "BSR_bsds500.tgz")
+    urlretrieve(
+            "http://www2.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/BSR/BSR_bsds500.tgz",
+            "BSR_bsds500.tgz",
+        )
+
   print('Creating MNIST-M... That may takes a minute')
   BST_PATH = 'BSR_bsds500.tgz'
 
