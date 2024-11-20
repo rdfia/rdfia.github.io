@@ -41,8 +41,11 @@ def _create_mnistm(X, rand, background_data):
 
         if i % 10000 == 0:
             print('Processing example', i)
+        
+        idx = rand.randint(len(background_data))
+        bg_img = background_data[idx]
 
-        bg_img = rand.choice(background_data)
+        #bg_img = rand.choice(background_data)
 
         d = _mnist_to_img(X[i])
         d = _compose_image(d, bg_img)
